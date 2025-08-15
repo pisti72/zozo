@@ -1,0 +1,41 @@
+
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(43, 43, 43);
+    background-color: rgb(184, 184, 184);
+}
+ 
+
+.row{
+   display: flex;
+   flex-wrap: wrap;
+}
+.col-img{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+   
+   
+}
+ 
+ 
+p{
+   text-align: justify;
+   padding-top: 15px;
+   
+}
+    h2{
+        text-size-adjust: 24px;
+        text-decoration: underline;
+        text-align: center;
+        margin-inline: 0 40px;
+    }
+ 
+    #HarryPotter{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }

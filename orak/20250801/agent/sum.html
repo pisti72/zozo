@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Two Numbers</title>
+    <link rel="stylesheet" href="sum.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sum Calculator</h2>
+    <input type="number" id="elsoSzam" placeholder="Első szám">
+    <input type="number" id="masodikSzam" placeholder="Második szám">
+    <div class="button-grid">
+        <button class="osszeg-btn" onclick="osszegSzamitas()">Összeg</button>
+        <button class="kulonbseg-btn" onclick="kulonbsegSzamitas()">Különbség</button>
+        <button class="szorzat-btn" onclick="szorzatSzamitas()">Szorzat</button>
+        <button class="hanyados-btn" onclick="hanyadosSzamitas()">Hányados</button>
+    </div>
+    <div class="result" id="eredmeny"></div>
+    </div>
+    <script src="sum.js"></script>
+</body>
+</html>

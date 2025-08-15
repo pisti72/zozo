@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számoló</title>
+    <link rel="stylesheet" href="szamol.css">
+</head>
+<body>
+    <h1 class="blue_header">Számoló</h1>
+    <p>Ide ird azt a számot, amit 3-mal fogok megszorozni</p>
+    <input id="szam" type="number"  placeholder="Írj be egy számot"/>
+     <input id="szam2" type="number"  placeholder="Írj be egy számot"/>
+    <button onclick="szamol()">Számol</button>
+    <p id="eredmeny">Ide jön az eredmény</p>
+    <h1>Másik</h1>
+    <script>
+        function szamol() {
+            let bevitel1 = document.getElementById("szam").value
+             let bevitel2 = document.getElementById("szam2").value
+              let osszeg =  Number(bevitel1) + parseFloat(bevitel2)
+            document.getElementById("eredmeny").innerHTML = "Az eredmény: " + osszeg
+        }
+    </script>
+</body>
+</html>

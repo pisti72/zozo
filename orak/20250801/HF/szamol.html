@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számoló</title>
+    <link rel="stylesheet" href="szamol.css">
+</head>
+<body>
+    <h1 class="blue_header">Számoló</h1>
+    <p>Összeadás</p>
+    <input id="szam" type="number"  placeholder="Írj be egy számot"/>
+     <input id="szam2" type="number"  placeholder="Írj be egy számot"/>
+    <button onclick="szamol()">Összead</button>
+     <button onclick="szamol2()">Szoroz</button>
+    <p id="eredmeny">Ide jön az eredmény</p>
+<p id="eredmeny2">Ide jön az eredmény</p>
+    <script>
+
+        function szamol() {
+            let bevitel1 = document.getElementById("szam").value
+             let bevitel2 = document.getElementById("szam2").value
+              let osszeg =  Number(bevitel1) + parseFloat(bevitel2)
+            document.getElementById("eredmeny").innerHTML = "Az eredmény: " + osszeg
+}
+
+              function szamol2() {
+            let bevitel3 = document.getElementById("szam").value
+             let bevitel4 = document.getElementById("szam2").value
+              let osszeg2 =  Number(bevitel3) *  parseFloat(bevitel4)
+            document.getElementById("eredmeny2").innerHTML = "Az eredmény: " + osszeg2
+        
+        }
+    </script>
+
+</body>
+</html>
