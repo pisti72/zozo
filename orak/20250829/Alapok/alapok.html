@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+        Felhasználó: <input type="text" id="felh"> <br>
+        Jelszó: <input type="text" id="jelszo">
+        <input type="button" value="Belépés" onclick="belep()">
+    <script>
+        console.log("elindultam")
+        user = document.getElementById("felh").value
+        passe = document.getElementById("jelszo").value
+        számláló = 0
+        function belep() {
+            számláló = számláló + 2
+            console.log("számláló értéke:" + számláló)
+
+            console.log("felhasználó: " + user)
+            console.log("jelszó: " + passe)
+            if (user == "zozo" && passe == "1234") {
+                alert("Sikeres belépés")
+            } else {
+                alert("HIBÁS belépés")
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
