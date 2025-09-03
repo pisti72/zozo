@@ -8,28 +8,29 @@
 </head>
 
 <body>
-        Felhasználó: <input type="text" id="felh"> <br>
-        Jelszó: <input type="text" id="jelszo">
-        <input type="button" value="Belépés" onclick="belep()">
+    Felhasználó: <input type="text" id="felh"> <br>
+    Jelszó: <input type="text" id="jelszo">
+    <input type="button" value="Belépés" onclick="belep()">
     <script>
-        console.log("elindultam")
-        user = document.getElementById("felh").value
-        passe = document.getElementById("jelszo").value
-        számláló = 0
-        function belep() {
-            számláló = számláló + 2
-            console.log("számláló értéke:" + számláló)
+        console.log("elindultam");
+        let számláló = 0;
 
-            console.log("felhasználó: " + user)
-            console.log("jelszó: " + passe)
-            if (user == "zozo" && passe == "1234") {
-                alert("Sikeres belépés")
+        function belep() {
+            const user = document.getElementById("felh").value;
+            const passe = document.getElementById("jelszo").value;
+
+            számláló = számláló + 2;
+            console.log("számláló értéke:" + számláló);
+
+            console.log("felhasználó: " + user);
+            console.log("jelszó: " + passe);
+
+            if (user === "zozo" && passe === "1234") {
+                alert("Sikeres belépés");
             } else {
-                alert("HIBÁS belépés")
+                alert("HIBÁS belépés");
             }
         }
-
-
     </script>
 </body>
 
