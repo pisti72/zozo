@@ -1,0 +1,1 @@
+Ide kerülnek a Python programok

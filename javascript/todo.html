@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+</head>
+
+<body>
+    <h1>TODO Lista</h1>
+    <input type="text" id="todoItem" placeholder="Ide írd a feladatod" onkeydown="submitted()">
+    <ul id="todo-list"></ul>
+    <script>
+        let item = document.getElementById("todoItem")
+        let todoList = document.getElementById("todo-list")
+        let todoItems = []
+
+        function submitted() {
+            if (event.key == "Enter") {
+                let todoItem = item.value
+                todoItems.push(todoItem)
+                renderList()
+                item.value = ""
+            }
+        }
+
+        function deleteItem(n) {
+            todoItems.splice(n, 1)
+            renderList()
+        }
+
+        function renderList() {
+            let listString = ""
+            for (let i = 0; i < todoItems.length; i++) {
+                listString += "<li>" + todoItems[i] + "&nbsp;&nbsp;<span onclick=\"deleteItem(" + i + ")\" style=\"cursor:pointer\">❌</span></li>"
+            }
+            todoList.innerHTML = listString
+        }
+
+    </script>
+</body>
+
+</html>
