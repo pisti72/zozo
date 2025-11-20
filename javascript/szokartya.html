@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szókartya</title>
+</head>
+
+<body>
+    <h1>Szókártya</h1>
+    <h2 id="kerdes">Ide jön a kikérdezett szó </h2>
+    <h2 id="eltuntet">Itt villantja majd fel a szó jelentését</h2>
+    <button onclick="ujat()">Újat kérek</button>
+    <button onclick="megmutat()">Megmutat</button>
+    <div class="control">
+        <label class="radio">
+            <input id="hun" type="radio" name="answer" />
+            Magyar
+        </label>
+        <label class="radio">
+            <input id="eng" type="radio" name="answer" />
+            Angol
+        </label>
+    </div>
+
+
+
+    <script>
+        let idx = 0
+        let lang = "en"
+
+        szavak = [
+            { en: "apple", hu: "alma" },
+            { en: "pear", hu: "körte" },
+            { en: "house", hu: "ház" },
+            { en: "go", hu: "megy" },
+            { en: "distinct", hu: "megkülönböztet" },
+            { en: "compare", hu: "összehasonlít" },
+            { en: "compass", hu: "iránytű" },
+            { en: "print", hu: "myomtat" },
+            { en: "filter", hu: "szűr" },
+        ]
+        function ujat() {
+            let is_hun = f("hun").checked
+            idx = Math.floor(Math.random() * szavak.length)
+            let szo = szavak[idx].en
+            if (is_hun) {
+                szo = szavak[idx].hu
+            }
+            f("kerdes").innerHTML = szo
+            f("eltuntet").innerHTML = "❌❌❌❌❌❌❌❌❌❌❌"
+        }
+        function megmutat() {
+            let is_hun = f("hun").checked
+            let szo = szavak[idx].en
+            if (!is_hun) {
+                szo = szavak[idx].hu
+            }
+            f("eltuntet").innerHTML = szo
+
+        }
+        ujat()
+        function f(n) {
+            return document.getElementById(n)
+        }
+
+    </script>
+</body>
+<!-- 
+  _    _   __      _    __     _           _       _   
+ | |  | | /_/     (_)  / _|   | |         | |     | |  
+ | |__| | __ _ _____  | |_ ___| | __ _  __| | __ _| |_ 
+ |  __  |/ _` |_  / | |  _/ _ \ |/ _` |/ _` |/ _` | __|
+ | |  | | (_| |/ /| | | ||  __/ | (_| | (_| | (_| | |_ 
+ |_|  |_|\__,_/___|_| |_| \___|_|\__,_|\__,_|\__,_|\__|
+                                                       
+=============
+   1.: Legyen három nyomógomb (piros, kék és zöld), amelyiket ha megnyomod olyan színű lesz az oldal háttere.
+   2.: Feltuningolni ezt az oldalt ( css el megszépiteni , bootstrap)
+
+   -->
+
+</html>
