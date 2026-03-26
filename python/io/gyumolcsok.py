@@ -16,9 +16,9 @@ for f in fruits:
     
     html += "\t<tr>\n"
     if row==0:
-        html += "<th> sorszám </th>" + "\t\t<th>" + f[NAME] + "</th><th>" + f[PRICE] + "</th><th>" + f[UNIT] + "</th>\n"
+        html += f"\t\t<th> sorszám </th><th>{f[NAME]}</th><th>{f[PRICE]}</th><th>{f[UNIT]}</th>\n"
     else:
-        html += "<td>"+ str(row) +"</td>" + "\t\t<td>" + f[NAME] + "</td><td>" + f[PRICE] + "</td><td>" + f[UNIT] + "</td>\n"
+        html += f"\t\t<td>{str(row)}</td><td>{f[NAME]}</td><td>{f[PRICE]}</td><td>{f[UNIT]}</td>\n"
     html += "\t</tr>\n"
     row += 1
 html += "</table>"
