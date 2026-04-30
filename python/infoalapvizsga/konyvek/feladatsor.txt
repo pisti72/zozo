@@ -1,0 +1,72 @@
+MINTA FELADATSOR – Ágazati Alapvizsga (Programozás)
+====================================================
+Téma: Könyvesbolt nyilvántartás
+Adatfájl: konyvek.txt (fejléccel, pontosvesszővel elválasztva)
+Mezők: cím ; szerző ; műfaj ; ár (Ft) ; oldalszám
+
+----------------------------------------------------
+1. FELADAT – Osztály és beolvasás (kötelező)
+----------------------------------------------------
+Hozz létre egy Konyv osztályt, amely tárolja egy könyv
+következő adatait: cím, szerző, műfaj, ár (egész), oldalszám (egész).
+
+Olvasd be a konyvek.txt fájl összes sorát (a fejlécet hagyd ki),
+és töltsd egy konyvek nevű listába!
+
+----------------------------------------------------
+2. FELADAT – Listázás
+----------------------------------------------------
+Írd ki minden könyv adatát a következő formában:
+  [cím] - [szerző] ([műfaj]) - [ár] Ft
+
+----------------------------------------------------
+3. FELADAT – Darabszám
+----------------------------------------------------
+Írd ki, hogy összesen hány könyv van a listában!
+
+----------------------------------------------------
+4. FELADAT – Összegzés
+----------------------------------------------------
+Számítsd ki és írd ki az összes könyv árának összegét!
+
+----------------------------------------------------
+5. FELADAT – Maximum
+----------------------------------------------------
+Melyik a legdrágább könyv? Írd ki a nevét és árát!
+
+----------------------------------------------------
+6. FELADAT – Minimum
+----------------------------------------------------
+Melyik a legolcsóbb könyv? Írd ki a nevét és árát!
+
+----------------------------------------------------
+7. FELADAT – Szűrés
+----------------------------------------------------
+Listázd ki csak a "fantasy" műfajú könyveket
+(cím és szerző elég)!
+
+----------------------------------------------------
+8. FELADAT – Feltételes számlálás
+----------------------------------------------------
+Hány könyv ára haladja meg a 3000 Ft-ot?
+
+----------------------------------------------------
+9. FELADAT – Felhasználói keresés
+----------------------------------------------------
+Kérj be egy szerzőnevet a felhasználótól!
+Ha van ilyen szerző a listában, írd ki a könyvének
+összes adatát. Ha nincs, írd ki:
+  "Nem található ilyen szerző."
+
+----------------------------------------------------
+10. FELADAT – Fájlba írás
+----------------------------------------------------
+Írd ki egy "300_felett.txt" nevű fájlba azoknak a
+könyveknek a CÍMÉT, amelyek 300 oldalnál hosszabbak!
+
+----------------------------------------------------
+BÓNUSZ FELADAT – Metódus
+----------------------------------------------------
+A Konyv osztályba írj egy kedvezmeny(szazalek) metódust,
+amely visszaadja az adott százalékkal csökkentett árat!
+Mutasd be a legdrágább könyvön 10%-os kedvezménnyel!

@@ -1,0 +1,19 @@
+cím;szerző;műfaj;ár;oldalszám
+Harry Potter és a bölcsek köve;Rowling J.K.;fantasy;3990;223
+A gyűrűk ura;Tolkien J.R.R.;fantasy;4990;544
+1984;Orwell George;disztopia;2990;328
+Honfoglalás;Nemere István;történelmi;1990;412
+Egri csillagok;Gárdonyi Géza;történelmi;2490;398
+Dűne;Herbert Frank;sci-fi;3490;512
+Az ígéret;Németh László;dráma;1790;286
+Éhezők viadala;Collins Suzanne;fantasy;2990;374
+Fahrenheit 451;Bradbury Ray;disztopia;2490;158
+A Pál utcai fiúk;Molnár Ferenc;ifjúsági;1590;204
+Száz év magány;García Márquez Gabriel;realizmus;3290;471
+Az ajtó;Szabó Magda;dráma;2190;265
+A kis herceg;Saint-Exupéry Antoine;ifjúsági;1990;96
+Frankenstein;Shelley Mary;horror;2290;312
+Az öreg halász és a tenger;Hemingway Ernest;realizmus;2390;127
+A Nap is felkel;Hemingway Ernest;realizmus;2590;247
+Névtelen csillag;Sebastian Mihail;dráma;1890;198
+Metropolis;Harbou Thea von;sci-fi;2790;288
